@@ -1,0 +1,41 @@
+
+{
+	// Place your workspace snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and 
+	// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope 
+	// is left empty or omitted, the snippet gets applied to all languages. The prefix is what is 
+	// used to trigger the snippet and the body will be expanded and inserted. Possible variables are: 
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. 
+	// Placeholders with the same ids are connected.
+	// Example:
+	"right": {
+		"scope": "javascript,typescript,css",
+		"prefix": "laddove",
+		"body": [
+			"/*---------------------------------------------------------------------------------------------",
+			" *  Copyright (c) Laddove. All rights reserved.",
+			" *  Licensed under the MIT License. See License.txt in the project root for license information.",
+			" *--------------------------------------------------------------------------------------------*/"
+		],
+	},
+	"Lit Element Component Snippet": {
+    "prefix": "lit-component",
+    "body": [
+      "import { customElement } from \"lit/decorators.js\";",
+      "import { LightDom } from \"@simple/utils/lightDom/lightDom\";",
+      "import { html } from \"lit\";",
+      "",
+      "@customElement(\"ff-component\")",
+      "export class MyComponent extends LightDom {",
+      "",
+      "    protected render(): unknown {",
+      "        return html`",
+      "        <div class=\"vcl-container\">",
+      "            <h2 class=\"text-3xl font-bold p-5\">##FiftyFourSimple - Component</h2>",
+      "        </div>",
+      "        `",
+      "    }",
+      "}"
+    ],
+    "description": "A snippet for a LitElement component class."
+  }
+}
